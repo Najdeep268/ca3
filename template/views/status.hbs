@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>HTML Page</title>
+  <link rel="stylesheet" href="./css/indx.css">
+  
+  <script src='./js/javascript.js' ></script>
+ </head>
+ <body>
+  {{>header}}
+  
+  <form class="loginform" action="welcome.html">
+				<h1>Flight Status</h1>
+				<div class="from">
+					<p>flight number</p>
+					<input type="number"placeholder="number" >
+				</div>
+				
+
+				<div class="dates">
+					<p> date of travel</p>
+					<input type="date" id="start" name="trip-start"value="2020-07-22" min="2020-01-01" max="2020-12-31">
+				</div>
+				<br>
+				
+				
+				<button type="submit" form="form1" value="check status">check status</button>
+					</form>
+	<br>
+
+  {{>footer}}
+ 
+  
+ </body>
+</html>

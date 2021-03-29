@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>HTML Page</title>
+  <link rel="stylesheet" href="./css/indx.css">
+  
+  <script src='./js/javascript.js' ></script>
+ </head>
+ <body>
+  {{>header}}
+  
+  <form class="loginform" action="welcome.html">
+				<h1>Update Booking </h1>
+				<div class="from">
+					<p>flight no </p>
+					<input type="number"placeholder="Number" >
+				</div>
+				 
+
+				<div class="dates">
+					<p>change the date</p>
+					<input type="date" id="start" name="trip-start"value="2020-07-22" min="2020-01-01" max="2020-12-31">
+				</div>
+				
+				<div class="no_of_person">
+					<p>add more booking</p>
+					<input type="number"placeholder=" add no of persons" name="t2">
+				</div>
+				<br>
+				<button type="submit" form="form1" value="update">update booking </button>
+				
+					</form>
+	<br>
+
+  {{>footer}}
+ 
+  
+ </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>HTML Page</title>
+  <link rel="stylesheet" href="./css/indx.css">
+  
+  <script src='./js/javascript.js' ></script>
+ </head>
+ <body>
+  {{>header}}
+  
+  <form class="loginform" action="welcome.html">
+				<h1>FLIGHT BOOK</h1>
+				<div class="from">
+					<p>from</p>
+					<input type="text"placeholder="From" >
+				</div>
+				<div class="to">
+					<p>to</p>
+					<input type="text"placeholder="to">
+				</div>
+
+				<div class="dates">
+					<p> date of travel</p>
+					<input type="date" id="start" name="trip-start"value="2020-07-22" min="2020-01-01" max="2020-12-31">
+				</div>
+				<div class="no_of_person">
+					<p>no of persons</p>
+					<input type="number"placeholder="no of persons" name="t2">
+				</div>
+				<div class="payment">
+					<p>payment mode</p>
+					<input type="radio" name="payment" value="cc" id="p1" />
+					<label for="male">Credit card</label><br/>
+					<input type="radio" name="payment" value="dc" id="p1"/>
+					<label for="male">Debit Card</label> <br /> 
+					<input type="radio" name="payment" value="wallet"id="p1">
+					<label for="male">Online banking</label><br/>
+				</div>
+                <br>
+				<div class="option">
+                    select the economy
+					<select id="cars" name="cars">
+						<option value="economy">Economy</option>
+						<option value="premium economy">premium economy</option>
+						<option value="business or first">business or first</option>
+					  </select>
+				</div>
+				<br>
+					<div class="belowbutton">
+						<input type="checkbox" id="term" name="vehicle1" value="Bike">
+						<label for="term">agree with <a href=#>Term and Condition </a></label>
+					</div>
+					</form>
+	<br>
+
+  {{>footer}}
+ 
+  
+ </body>
+</html>
